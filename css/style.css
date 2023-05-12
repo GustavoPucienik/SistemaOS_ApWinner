@@ -1,0 +1,403 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: calibri;
+	box-sizing: border-box;
+}
+
+.clear{
+	clear: both;
+}
+
+.center{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+/*header*/
+header{
+	position: relative;
+	background-color: black;
+	color: white;
+	border-bottom: 2px solid red;
+}
+
+header h1{
+	padding:20px 50px;
+	font-size: 40px;
+}
+
+header .item{
+	width:20%;
+	text-align: center;
+}
+
+header .item:not(.last){
+	border-right: 2px solid white;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+}
+
+header .top-menu{
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+/*--------------------------*/
+
+.conteiner-banner{
+	box-sizing: border-box;
+	width: 100%;
+	height: calc(100vh - 115px);
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-size:cover;
+}
+
+.overlay{
+	padding:15% 50px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.conteiner-banner .text-banner{
+	font-size: 20px;
+	color: white;
+	padding: 240px 80px;
+}
+
+.conteiner-content{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.overlay > div > h2{
+	font-size: 50px;
+	color: white;
+}
+
+.overlay > div > p{
+	font-size: 20px;
+	color: white;
+}
+
+/*formulario*/
+form{
+	box-sizing: border-box;
+	width:85%;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid red;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+form h2{
+	padding-bottom: 10px;
+}
+
+form .setor, form .data{
+	padding-bottom: 10px;
+}
+
+form label{
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+form input[type=text][name=nome]{
+	width: 80%;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+form textarea{
+	width: 80%;
+	height: 100px;
+	box-sizing: border-box;
+	padding: 10px;
+	resize: none;
+}
+
+form input[type=submit], form input[type=reset]{
+	margin-top: 10px;
+	width: 120px;
+	height: 30px;
+}
+
+form input[type=submit]{
+	background-color: lightgreen;
+	border: 0;
+	transition: 0.7s;
+}
+
+form input[type=submit]:hover{
+	background-color: green;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+form input[type=reset]{
+	border: 0;
+	transition: 0.7s;
+}
+
+form input[type=reset]:hover{
+	border: 1px solid red;
+	border-radius: 10px;
+	cursor: pointer;
+	color: red;
+}
+
+/*ordens*/
+
+.registro-ordens{
+	max-width: 1280px;
+	width: 100%;
+	margin: 20px auto;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	
+}
+
+table tr, table td, table th{
+	border: 1px solid black;
+}
+
+table th{
+	background-color: #ccc;
+}
+
+table .id{
+	width: 3%;
+	padding: 10px;
+}
+
+table .data{
+	width: 10%;
+	padding: 10px;
+}
+
+table .ocor{
+	width: 45%;
+}
+
+table .acoes{
+	padding: 10px;
+}
+
+table td a{
+	padding: 5px;
+}
+
+/*OS*/
+.ordens{
+	width: 700px;
+	margin: 20px auto;
+}
+
+.conteiner_os{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conteiner_os > div{
+	display: flex;
+	width:27%;
+	padding: 2px 2%;
+} 
+
+/*relatorio*/
+
+section.requisitante{
+	width: 100%;
+	max-width: 1280px;
+	margin: 30px auto;
+}
+
+.OS{
+	width: 100%;
+	max-width: 1280px;
+	margin: 30px auto;
+}
+
+form.relatorio{
+	padding: 40px;
+}
+
+.OS .Tipo_manutencao, .terceiros, .relatorio_tecnico{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid gray;
+
+}
+
+.terceiros input[type=text]{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 7px;
+}
+
+.relatorio_tecnico h2{
+	text-align: center;
+}
+
+.relatorio_tecnico{
+	text-align: left;
+}
+
+.relatorio_tecnico label{
+	width: 150px;
+}
+
+.parada_maquina label{
+	width: 50px;
+}
+
+.relatorio_tecnico input[type=text]{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 7px;
+}
+
+.topico{
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(114, 114, 114);
+}
+
+.relatorio_tecnico .conteiner-parada{
+	padding: 0 40px;
+}
+
+.OS textarea{
+	width: 100%;
+}
+/*************/
+
+/*tempo requisicão*/
+.tempoRequisicao{
+	padding-bottom: 15px;
+	margin-bottom:15px;
+	border-bottom: 2px solid rgb(114, 114, 114); 
+}
+
+.tempoRequisicao > div{
+	width: 25%;
+	text-align: center;
+	display: inline-block;
+	margin-left: -4px;
+}
+/******************/
+
+/*****LOGIN*****/
+.login{
+	padding: 0 2%;
+	color: white;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login form{
+	border-radius: 10px;
+	display: table;
+	width: 100%;
+	max-width: 500px;
+	margin: auto auto;
+
+}
+
+.login form div{
+	padding-bottom: 30px;
+}
+
+.login form div p{
+	margin-bottom: 10px;
+}
+
+
+.login form div input[type=text], .login form input[type=password]{
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	width: 90%;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 10px;
+	padding-left: 7px;
+}
+
+.login form input[type=submit]{
+	margin: 10px 20px;
+}
+
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}*/
+
+.login form input[type=reset]{
+	background: black;
+	border: 1px solid white;
+	color: white;
+}
+/**************/
+/****filtro*****/
+form.filtrar div{
+	display: inline-block;
+	padding: 0 30px;
+	text-align: center;
+}
+
+form.filtrar div select{
+	display: block;
+}
+
+form.filtrar input[type=submit]{
+	display: block;
+	margin: 15px auto;
+}
+/***************/
+
+/***imprimir***/
+
+.imprimir_req{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.imprimir_req a{
+	padding: 10px;
+	background-color: rgb(65, 239, 65);
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+	transition: 0.7s;
+}
+
+.imprimir_req a:hover{
+	background-color: green;
+}
+
+/**************/
+
+
+
+
+
