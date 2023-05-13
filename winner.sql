@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `ordemservico` (
   `id` int(11) NOT NULL,
   `nomeRequisitante` varchar(80) NOT NULL,
-  `setor` varchar(20) NOT NULL,
+  `setor` varchar(25) NOT NULL,
   `linhaProducao` varchar(40) DEFAULT NULL,
   `dataRequisicao` datetime NOT NULL,
   `descricaoRequisicao` text NOT NULL,
@@ -96,7 +96,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `codigo`, `senha`, `previlegio`) VALUES
-(1, 123456, '123456', 2);
+(1, 111, 'mbcpIHZr', 3), (2, 222, 'vCSVJ&Ng', 2), (3, 333, '&MWND4CO', 1);
 
 --
 -- Índices para tabelas despejadas

@@ -1,5 +1,8 @@
 <?php 
 	include 'parts/header.php';
+	require_once 'php/consulta.php';
+	require_once 'php/verifica_sessao.php';
+	verifica_conectado(2);
 ?>
 <div class="filtro">
     <?php

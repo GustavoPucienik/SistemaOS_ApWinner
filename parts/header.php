@@ -11,17 +11,16 @@
 	<script src="js/func.js"></script>
 </head>
 <body>
-	
 	<header>
-		<h1>AP Winner</h1>
+		<h1><a href="index.php">AP Winner</a></h1>
 		<div class="top-menu">
-			<div class="item"><a href="index.php">Inicio</a></div>
-			<div class="item"><a href="Usuario.php">Usuario</a></div>
-			<div class="item"><a href="ordens.php">Ordens</a></div>
-			<div class="item"><a href="ordensConcluidas.php">Concluidas</a></div>
-			<div class="item last"><a href="php/logout.php">Sair</a></div>
+			<div><a href="index.php">Inicio</a></div>
+			<div ><a href="Usuario.php">Usuario</a></div>
+			<div ><a href="ordens.php" >Ordens</a></div>
+			<div ><a href="ordensConcluidas.php" >Concluidas</a></div>
+			<div class="item"><a href="php/logout.php">Sair</a></div>
 			<div class="clear"></div>
-		</div><!--top-menu-->	
+		</div>
 	</header>
 <?php
 ?>

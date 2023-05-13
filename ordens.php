@@ -3,11 +3,12 @@
 	require_once 'php/consulta.php';
 	require_once 'php/verifica_sessao.php';
 
-	verifica_conectado(1);
+	verifica_conectado(2);
 
+	?><?php 
 	require 'php/filtro.php';
 	filtrodados('php/relatorioCSV.php', 'Relatório','Imprimir');
-?>
+	?>
 	<div class="registro-ordens" id="registros_ordens">
 		<table>
 			<tr>

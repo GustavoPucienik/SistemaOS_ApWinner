@@ -29,23 +29,28 @@ header h1{
 	font-size: 40px;
 }
 
-header .item{
-	width:20%;
+header div{
 	text-align: center;
+	margin-bottom: 12px;
+}
+header .top-menu a:hover{
+	transition: .7s;
+	background: #333;
 }
 
-header .item:not(.last){
-	border-right: 2px solid white;
-}
 
 header a{
 	text-decoration: none;
 	color: white;
+	padding: 15px;
+	border-radius: 5px;
+	margin-left: 10vw;
 }
 
 header .top-menu{
 	display: flex;
 	width: 90%;
+	justify-content: center;
 	margin: 0 auto;
 	margin-bottom: 5px;
 }

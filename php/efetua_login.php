@@ -29,6 +29,10 @@
     $_SESSION['USUARIOSENHA'] = $resultado['senha'];
     $_SESSION['USUARIOPREV'] = $resultado['previlegio'];
 
+    if($_SESSION['USUARIOPREV'] >= 2){
     header("Location: ../ordens.php");//redireciona para ordens 
+    }else{
+        header("Location: ../Usuario.php");
+    }
     exit;//mata o codigo
 ?>
